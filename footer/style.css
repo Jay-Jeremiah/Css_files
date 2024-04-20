@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer .container{
+    background-color: black;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col h4 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background-color: #e91e64;
+    bottom: -10px; 
+}
+
+.footer-col ul li {
+    padding: 10px 0;
+}
+
+
+.footer-col ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+
+.footer-col ul li a:hover{
+    opacity: 1;
+}
+
+.footer-col input {
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+
+.footer-col .inputSubmit {
+    padding: 0px 20px;
+    background-color: #e91e64;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-col .inputSubmit:hover{
+    background-color: green;
+    opacity: 0.7;
+    transition: 2s;
+}
+
+.footer-col .inputSubmit:active {
+    background-color: green;
+    opacity: 1;
+    transition: 2s;
+}
+
+.col p{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    ;
+}
+
+@media (max-width: 600px) {
+    footer .row{
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    footer .footer-col ul {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-col input {
+        width: 100%;
+    }
+}
